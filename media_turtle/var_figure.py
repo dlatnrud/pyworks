@@ -23,3 +23,5 @@ for i in range(n):
 # 원
 t.color("red")
 t.circle(100)    # 반지름이 100px
+
+t.mainloop()
