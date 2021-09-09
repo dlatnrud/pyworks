@@ -1,6 +1,7 @@
 # 학생 클래스
 class Student:
     def __init__(self, name, grade):
+        print("객체를 생성합니다.")
         self.name = name
         self.grade = grade
 
@@ -9,6 +10,7 @@ class Student:
 
     def __str__(self):  # 객체의 정보 출력
         return "이름 : {0} {1}학년".format(self.name, self.grade)
+
 
 # 자동차 클래스
 class Car:
@@ -28,6 +30,7 @@ class Car:
 
     def turn_left(self):
         pass
+
 
 # 사원 클래스
 class Employee:
