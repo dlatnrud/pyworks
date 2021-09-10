@@ -20,6 +20,10 @@ class Employee(Person):
 
 emp1 = Employee("콩쥐", 25, 1001)
 print(emp1)
+
+emp2 = Employee("팥쥐", 25, 1002)
+print(emp2)
+
 """
 print(emp1.name)
 print(emp1.age)
