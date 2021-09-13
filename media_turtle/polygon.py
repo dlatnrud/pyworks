@@ -6,7 +6,7 @@ t.shape("turtle")
 def polygon(n):
     for i in range(n):
         t.forward(50)   # 거리(변의 길이)
-        t.left(360 / n) # 각도
+        t.left(360/n)   # 각도
 
 
 def polygon2(n, d):
