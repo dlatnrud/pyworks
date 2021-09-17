@@ -13,8 +13,12 @@ print(s)
 s.remove(8)
 print(s)
 
-str = set("Hello")
+str = set("Hello")  # list() = set()
 print(str)
 
 name = set(['콩쥐', '팥쥐', '콩쥐'])
 print(name)
+
+print(list([1, 2, 3, 3]))
+print(set([1, 2, 2, 3, 3, 3]))
+print(set("happy"))
