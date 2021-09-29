@@ -4,7 +4,7 @@
 import re
 
 # 정규식
-p = re.compile("ca*t")
+p = re.compile("ca*t")  # 정규식
 
 m1 = re.findall(p, "caat")
 print(m1)
@@ -13,7 +13,7 @@ m2 = re.findall(p, "ct")
 print(m2)
 
 # 정규식
-p2 = re.compile("ca+t")
+p2 = re.compile("ca+t")  # 정규식
 
 m = re.findall(p2, "caat")
 print(m1)
