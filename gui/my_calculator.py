@@ -3,6 +3,12 @@ from tkinter import *
 
 def click(key):
     display.insert(END, key)
+    if key == '=':
+        value = eval(display.get())
+        result = str(value)
+        display.insert(END, '=' + result)
+    elif key == 'C':
+        display.delete(0, END)
 
 root = Tk()
 root.title("나의 계산기")
@@ -40,8 +46,22 @@ for btn_txt in num_pad_list:
 operator = Frame(root)
 operator.grid(row=1, column=1, sticky=E)
 operator_list = [
-
+    '*', '/',
+    '+', '-',
+    '(', ')',
+    'C'
 ]
+r = 0
+c = 0
+for btn_txt in operator_list:
+    def cmd(x=btn_txt):
+        click(x)
+
+    Button(operator, text=btn_txt, width=5, command=cmd).grid(row=r, column=c)
+    c = c + 1
+    if c > 1:
+        c = 0
+        r = r + 1
 
 
 root.mainloop()
